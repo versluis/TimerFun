@@ -32,8 +32,8 @@
     // initialize our counter
     self.counter = 0;
 
-    // setup the timer with a two second repeat
-    // NSTimer self.myTimer = [[NSTimer alloc]init];
+    // setup the timer with a 0.1 second repeat
+    
     self.myTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateLabel) userInfo:nil repeats:YES];
 
 }
@@ -42,7 +42,7 @@
     
     // stop the timer
     [self.myTimer invalidate];
-    // self.myTimer = nil;
+
     
 }
 
