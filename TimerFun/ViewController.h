@@ -10,4 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *countingLabel;
+@property int counter;
+@property (strong, nonatomic) NSTimer *myTimer;
+
+- (IBAction)startTimer:(id)sender;
+- (IBAction)stopTimer:(id)sender;
+
 @end
